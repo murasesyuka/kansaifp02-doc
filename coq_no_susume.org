@@ -1,8 +1,38 @@
+#+TITLE: coq_no_su,me
+#+AUTHOR: murase_syuka
+#+EMAIL: murase_syuka+kansaifp@gmail.com
 
+* 関西関数型道場 - 第02回
+  2014年12月06日(土)
 
-* コックのすゝめ
+  Coqのすゝめ
 
-** memo
+* 目次
+  
+  + coqについて
+  + coqのはじめかた
+  + coqをはじめるその前に
+  + ハンズオン
+  + 参考文献
+
+* coqについて
+
+  #+BEGIN_EXAMPLE from wikipedia
+  Coqは証明支援システムの一つで、プログラミング言語Gallinaを用いる。
+  フランス国立情報学自動制御研究所のPI.R2チーム(PPS研究所内にある)が、
+  エコール・ポリテクニーク、フランス国立工芸院、パリ第7大学、パリ第11大学と
+  (かつてリヨン高等師範学校とも)共同して開発している。
+  Hugo Herbelinが事実上の開発代表者である。
+  (ry...
+  正しい証明は正しく型がつくラムダ式であるというカリー＝ハワード同型対応を利用しているので、
+  Coqの証明言語は型付きラムダ計算の一種である。
+  (ry...
+  #+END_EXAMPLE
+   
+
+** 定理証明器
+   coq(OCaml)以外にも、Agda(haskell)Isabelle
+  
 
 1. HaskellのVector []で例外投げるの幽霊型導入
 
@@ -12,11 +42,71 @@ http://konn-san.com/prog/2013-advent-calendar.html
    
    Q. coqで導出は出きるが証明になるのか？
 
-3. 
+
+3.
 
 ** coqとは
    証明支援
 
+* coqのはじめかた
+
+  + [[http://www.amazon.co.jp/%E7%86%B1%E8%A1%80-%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%96%E3%83%A9%E5%85%A5%E9%96%80-%E5%9D%82%E4%BA%95-%E5%BC%98%E4%BA%AE/dp/4798041807][こんな心構え]]で
+  + [[http://www.iij-ii.co.jp/lab/techdoc/coqt/][女子大生が書いていると心引かれて]]
+  
+** で始めると
+
+   [[https://www.google.co.jp/search?q=%E3%83%80%E3%83%A1%E3%82%88%E3%83%BC%E3%80%81%E3%83%80%E3%83%A1%E3%83%80%E3%83%A1&client=firefox-a&hs=1eG&rls=org.mozilla:ja:official&hl=ja&biw=710&bih=690&source=lnms&tbm=isch&sa=X&ei=wMSBVO7ADcTFmQXlyIDIDQ&ved=0CAgQ_AUoAQ][ダメよー、ダメダメ]]
+
+** 簡単は初めかた
+
+   + [[http://proofcafe.org/sf/][ソフトウェアの基礎]]
+   + [[http://shop.oreilly.com/product/0636920024743.do][Real World OCaml ]]
+     + [[http://www.oreilly.co.jp/books/9784873116976/][アンダースタンディング コンピュテーション――単純な機械から不可能なプログラムまで]]
+       + [[http://estore.ohmsha.co.jp/titles/978427406911P][型システム入門 プログラミング言語と型の理論]]
+
+*** 簡単な環境の作り方
+    
+    + debian(jessie)いれます
+    + apt-get install emacs coqします
+    + emacsをほげほげして、proofgeneralをいれます
+
+**** ほらコンナにカンタン
+
+     だと思います
+
+***** でも（独習って）難しいでしょ？
+
+      そんなあなたも大丈夫。だって勉強会が
+
+****** ソフトウェアの基礎　読書会
+
+       ないよ
+
+****** Real World OCaml　読書会
+
+       飯くって、Haskellして、寝ろ
+
+****** アンダースタンディング コンピュテーション　読書会
+
+       amagaki.rbで読書会をすると噂が！？
+
+****** 型システム入門　読書会
+
+       あるよ
+
+******* 型システム入門　読書会
+
+       	明日、有ります！
+
+******* 型システム入門　読書会
+
+       	明日、有ります！！
+
+******* 型システム入門　読書会
+
+       	明日、有ります！！！
+
+* coqをはじめるその前に
 
 *** cheetsheet
     https://gist.github.com/qnighy/4465660
@@ -37,14 +127,10 @@ http://konn-san.com/prog/2013-advent-calendar.html
 
     ユークリッド幾何学／非ユークリッド幾何学
 
-    
 
-*** 
 
-** 環境構築
+* ハンズオン
 
-** coqについて
+* 参考文献
 
-** 実習
-
-** 演習
+[[http://www.slideshare.net/tmiya/coq-tutorial]]
