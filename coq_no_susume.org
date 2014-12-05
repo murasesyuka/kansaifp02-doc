@@ -31,22 +31,7 @@
    
 
 ** 定理証明器
-   coq(OCaml)以外にも、Agda(haskell)Isabelle
-  
-
-1. HaskellのVector []で例外投げるの幽霊型導入
-
-http://konn-san.com/prog/2013-advent-calendar.html
-
-2. coqのlistで証明
-   
-   Q. coqで導出は出きるが証明になるのか？
-
-
-3.
-
-** coqとは
-   証明支援
+   coq(OCaml)以外にも、Agda(haskell)Isabelle(Standard ML)等の高階述語論理
 
 * coqのはじめかた
 
@@ -108,29 +93,64 @@ http://konn-san.com/prog/2013-advent-calendar.html
 
 * coqをはじめるその前に
 
-*** cheetsheet
-    https://gist.github.com/qnighy/4465660
+** 定義、公理、定理
 
-*** カリーハワード対応
+*** 原論
     
-** 証明とは
-
-*** 証明可能とは
-
-    証明可能なことは証明できるか？
-
-    原論
-    
+    ユークリッド幾何学／非ユークリッド幾何学
+     
     + まず、点や線などの基礎的な概念に対する定義を与える
     + 次に、一連の公理を述べ、公理系を確立する
     + そして、それらの上に500あまりの定理を証明する。
 
-    ユークリッド幾何学／非ユークリッド幾何学
+*** 
+
+** 形式手法
+
+** 高階述語論理
+
+** 
+
+** 
+
+** カリーハワード対応
+   
+
 
 
 
 * ハンズオン
 
+** coqideの使い方
+   
+   実演
+
+** proofgeneralの使い方
+
+   実演
+
+** 演習
+
+1. HaskellのVector []で例外投げるの幽霊型導入
+
+http://konn-san.com/prog/2013-advent-calendar.html
+
+2. coqのlistで証明
+   
+   Q. coqで導出は出きるが証明になるのか？
+
+3.
+
+
 * 参考文献
 
-[[http://www.slideshare.net/tmiya/coq-tutorial]]
+  + [[http://sssslide.com/www.slideshare.net/tmiya/coq-tutorial][Formal Methods Forum Coq入門 @tmiya April 20,2011 @tmiya : Coq 入門]]
+    + [[http://www.slideshare.net/tmiya/coq-tutorial]]
+
+  + [[https://github.com/hsk/docs]]
+    + [[https://github.com/hsk/docs/tree/master/typetheory][型理論入門]]
+
+  + [[http://togetter.com/li/752948][禅問答的に #ATS2 の型理論を説明してみたよ]]
+
+** cheetsheet
+   https://gist.github.com/qnighy/4465660
