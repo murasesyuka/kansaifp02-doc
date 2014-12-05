@@ -97,23 +97,68 @@
 
 *** 原論
     
-    ユークリッド幾何学／非ユークリッド幾何学
+    ユークリッド幾何学
      
     + まず、点や線などの基礎的な概念に対する定義を与える
     + 次に、一連の公理を述べ、公理系を確立する
     + そして、それらの上に500あまりの定理を証明する。
+      + 三角形の内角の和は180度である
 
-*** 
+** coqとあ
 
+*** 依存型を用いた関数型プログラミング
+
+    #+BEGIN_SRC coq
+    Eval compute in 2+3.
+    
+    Definition plus (n m:nat) : nat := n+m.
+
+    Eval compute in (plus 2 3).
+    Eval simpl in plus.
+    Check plus.
+    #+END_SRC
+
+*** 述語論理
+
+    coqは高階述語論理
+    
+    #+BEGIN_EXAMPLE
+    述語論理（じゅつごろんり、predicate logic）とは、
+    命題論理における命題を主語と述語に分離した上で命題についての分析を行う論理のことである。
+    数理論理学における論理体系の一つである。
+    #+END_EXAMPLE
+    
 ** 形式手法
 
-** 高階述語論理
+** 一階（二階、高階）述語論理
+   
+    + すべての人間は死ぬ。
+    + ソクラテスは人間である。
+    + したがってソクラテスは死ぬ。 
+      
+      ↓
+      
+    + ∀x (Px → Qx)
+    + Pa
+    + Qa 
 
 ** 
 
 ** 
 
-** カリーハワード対応
+** カリーハワード同型対応
+
+   | ラムダ計算 | 自然演繹     |
+   |------------+--------------|
+   | 型         | 命題         |
+   | 抽象規則   | ⇒の導入規則 |
+   | 適応規則   | ⇒の除去規則 |
+   | プログラム | 証明         |
+   | β簡約     | 証明の簡約   |
+
+
+
+
    
 
 
@@ -147,10 +192,15 @@ http://konn-san.com/prog/2013-advent-calendar.html
   + [[http://sssslide.com/www.slideshare.net/tmiya/coq-tutorial][Formal Methods Forum Coq入門 @tmiya April 20,2011 @tmiya : Coq 入門]]
     + [[http://www.slideshare.net/tmiya/coq-tutorial]]
 
+  + [[http://www.slideshare.net/Real_analysis/coq-10201226][よくわかるCoqプログラミング]]
+
   + [[https://github.com/hsk/docs]]
     + [[https://github.com/hsk/docs/tree/master/typetheory][型理論入門]]
 
   + [[http://togetter.com/li/752948][禅問答的に #ATS2 の型理論を説明してみたよ]]
+
+  + [[http://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AA%E3%83%BC%EF%BC%9D%E3%83%8F%E3%83%AF%E3%83%BC%E3%83%89%E5%90%8C%E5%9E%8B%E5%AF%BE%E5%BF%9C][wikipedia:カリー＝ハワード同型対応]]
+    + [[http://ja.wikipedia.org/wiki/%E4%B8%80%E9%9A%8E%E8%BF%B0%E8%AA%9E%E8%AB%96%E7%90%86][一階述語論理]]
 
 ** cheetsheet
    https://gist.github.com/qnighy/4465660
