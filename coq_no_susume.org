@@ -117,15 +117,7 @@
 
 *** 依存型を用いた関数型プログラミング
 
-    #+BEGIN_SRC coq
-    Eval compute in 2+3.
-    
-    Definition plus (n m:nat) : nat := n+m.
-
-    Eval compute in (plus 2 3).
-    Eval simpl in plus.
-    Check plus.
-    #+END_SRC
+    //sample code
 
 *** 述語論理
 
@@ -182,8 +174,6 @@
    リスト a+b のリストを返すというような型を持つことになります。
    #+END_EXAMPLE
    
-** 
-
 ** カリーハワード同型対応
 
    | ラムダ計算 | 自然演繹     |
@@ -204,18 +194,6 @@
 ** proofgeneralの使い方
 
    実演
-
-** 演習
-
-1. HaskellのVector []で例外投げるの幽霊型導入
-
-http://konn-san.com/prog/2013-advent-calendar.html
-
-2. coqのlistで証明
-   
-   Q. coqで導出は出きるが証明になるのか？
-
-3.
 
 ** 演習
 
