@@ -2,7 +2,7 @@
 #+AUTHOR: murase_syuka
 #+EMAIL: murase_syuka+kansaifp@gmail.com
 
-[[./title.png]]
+[[./img/title.png]]
 
 * 関西関数型道場 - 第02回
   2014年12月06日(土)
